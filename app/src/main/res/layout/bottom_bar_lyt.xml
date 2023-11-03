@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:id="@+id/bottomNavMotion"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:elevation="10dp"
+            android:focusable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+
+        <ImageView
+            android:id="@+id/offer_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            android:src="@drawable/offer_icon"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:paddingTop="10dp"
+            app:layout_constraintTop_toTopOf="@+id/view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/homeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:elevation="10dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:paddingTop="10dp"
+            app:layout_constraintEnd_toStartOf="@+id/category_btn"
+            app:layout_constraintStart_toStartOf="@+id/view"
+            app:layout_constraintTop_toTopOf="@+id/view"
+            app:srcCompat="@drawable/home_icon" />
+
+        <ImageView
+            android:id="@+id/category_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:paddingTop="10dp"
+            android:layout_marginEnd="15dp"
+            app:layout_constraintEnd_toStartOf="@+id/offer_btn"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/homeBtn"
+            app:layout_constraintTop_toTopOf="@+id/view"
+            app:srcCompat="@drawable/category_icon" />
+
+        <ImageView
+            android:id="@+id/cart_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            android:layout_marginStart="15dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:paddingTop="10dp"
+            app:layout_constraintEnd_toStartOf="@+id/account_btn"
+            app:layout_constraintStart_toEndOf="@+id/offer_btn"
+            app:layout_constraintTop_toTopOf="@+id/view"
+            app:srcCompat="@drawable/cart" />
+
+        <ImageView
+            android:id="@+id/account_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:paddingTop="10dp"
+            android:fontFamily="@font/sf_pro_semi_bold"
+            android:layout_marginStart="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/cart_btn"
+            app:layout_constraintTop_toTopOf="@+id/view"
+            app:layout_constraintVertical_bias="0.509"
+            app:srcCompat="@drawable/account" />
+
+        <TextView
+            android:id="@+id/homeTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            android:text="@string/home"
+            android:padding="4sp"
+            android:fontFamily="@font/sf_pro_semi_bold"
+            android:textSize="10sp"
+            android:textColor="#757576"
+            app:layout_constraintEnd_toEndOf="@+id/homeBtn"
+            app:layout_constraintStart_toStartOf="@+id/homeBtn"
+            app:layout_constraintTop_toBottomOf="@+id/homeBtn" />
+
+        <TextView
+            android:id="@+id/categoryTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            android:text="@string/category"
+            android:textSize="10sp"
+            android:padding="4sp"
+            android:fontFamily="@font/sf_pro_semi_bold"
+            android:textColor="#757576"
+            app:layout_constraintEnd_toEndOf="@+id/category_btn"
+            app:layout_constraintStart_toStartOf="@+id/category_btn"
+            app:layout_constraintTop_toBottomOf="@+id/category_btn" />
+
+        <TextView
+            android:id="@+id/cart_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:elevation="10dp"
+            android:text="@string/cart"
+            android:padding="4sp"
+            android:fontFamily="@font/sf_pro_semi_bold"
+            android:textSize="10sp"
+            android:textColor="#757576"
+            app:layout_constraintEnd_toEndOf="@+id/cart_btn"
+            app:layout_constraintStart_toStartOf="@+id/cart_btn"
+            app:layout_constraintTop_toBottomOf="@+id/cart_btn" />
+
+        <TextView
+            android:id="@+id/profile_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            android:text="@string/account"
+            android:padding="4sp"
+            android:textSize="10sp"
+            android:textColor="#757576"
+            app:layout_constraintEnd_toEndOf="@+id/account_btn"
+            app:layout_constraintStart_toStartOf="@+id/account_btn"
+            app:layout_constraintTop_toBottomOf="@+id/account_btn" />
+
+        <TextView
+            android:id="@+id/offer_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            android:text="@string/offer"
+            android:padding="4sp"
+            android:fontFamily="@font/sf_pro_semi_bold"
+            android:textSize="10sp"
+            android:textColor="#757576"
+            app:layout_constraintEnd_toEndOf="@+id/offer_btn"
+            app:layout_constraintStart_toStartOf="@+id/offer_btn"
+            app:layout_constraintTop_toBottomOf="@+id/offer_btn" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

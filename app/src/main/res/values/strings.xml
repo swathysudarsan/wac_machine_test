@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SampleAppWAC</string>
+    <string name="home">Home</string>
+    <string name="category">Categories</string>
+    <string name="offer">Offers</string>
+    <string name="cart">Cart</string>
+    <string name="search">Search</string>
+    <string name="account">Account</string>
+    <string name="add">ADD</string>
+
+</resources>
